@@ -86,6 +86,9 @@ async def batch(client: Client, message: Message):
 
     # Use the source channel ID for encoding instead of default primary channel
     client.LOGGER(__name__, client.name).info(f"Generating batch link with source channel: {source_channel_id}, first_msg: {f_msg_id}, last_msg: {s_msg_id}")
+    
+    source_channel_id = int(source_channel_id)  # FIXED
+    
     string = f"get-{f_msg_id * abs(source_channel_id)}-{s_msg_id * abs(source_channel_id)}"
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
@@ -123,6 +126,8 @@ async def link_generator(client: Client, message: Message):
             await channel_message.reply("<blockquote>✗ ᴇʀʀᴏʀ</blockquote>\n\nᴛʜɪs ꜰᴏʀᴡᴀʀᴅᴇᴅ ᴘᴏsᴛ ɪs ɴᴏᴛ ꜰʀᴏᴍ ᴍʏ ᴅʙ ᴄʜᴀɴɴᴇʟ ᴏʀ ᴛʜɪs ʟɪɴᴋ ɪs ɴᴏᴛ ᴛᴀᴋᴇɴ ꜰʀᴏᴍ ᴅʙ ᴄʜᴀɴɴᴇʟ", quote = True)
             continue
 
+    source_channel_id = int(source_channel_id)  # FIXED
+    
     base64_string = await encode(f"get-{msg_id * abs(source_channel_id)}")
     link = f"https://t.me/{client.username}?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 sʜᴀʀᴇ ᴜʀʟ", url=f'https://telegram.me/share/url?url={link}')]])
@@ -165,6 +170,8 @@ async def nbatch(client: Client, message: Message):
             await first_message.reply("<blockquote>😫 ɪɴᴠᴀʟɪᴅ!</blockquote> sᴇɴᴅ ᴄᴏʀʀᴇᴄᴛ ᴅʙ ᴄʜᴀɴɴᴇʟ ᴍᴇssᴀɢᴇ ʟɪɴᴋ.", quote=True)
             continue
     
+    source_channel_id = int(source_channel_id)  # FIXED
+    
     s_msg_id = f_msg_id + batch_size - 1  # Adding batch_size to first message ID
     
     string = f"get-{f_msg_id * abs(source_channel_id)}-{s_msg_id * abs(source_channel_id)}"
@@ -175,5 +182,4 @@ async def nbatch(client: Client, message: Message):
         [InlineKeyboardButton("📫 ʏᴏᴜʀ ʙᴀᴛᴄʜ ᴜʀʟ", url=f'https://telegram.me/share/url?url={link}')]
     ])
     
-    await first_message.reply_text(f"<blockquote>✓ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʙᴀᴛᴄʜ ʟɪɴᴋ</blockquote>\n\n<code>{link}</code>", quote=True, reply_markup=reply_markup)    
-
+    await first_message.reply_text(f"<blockquote>✓ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʙᴀᴛᴄʜ ʟɪɴᴋ</blockquote>\n\n<code>{link}</code>", quote=True, reply_markup=reply_markup)
