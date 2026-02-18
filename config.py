@@ -4,7 +4,7 @@ from logging.handlers import RotatingFileHandler
 # Bot Configuration
 LOG_FILE_NAME = "bot.log"
 PORT = '5010'
-OWNER_ID = 6497757690
+OWNER_ID = ""
 
 MSG_EFFECT = 5046509860389126442
 
@@ -14,17 +14,17 @@ SHORT_TUT = "https://t.me/How_to_Download_7x/26"
 
 # Bot Configuration
 SESSION = "yato"
-TOKEN = "642712"
-API_ID = ""
-API_HASH = ""
+TOKEN = "8280972866:AAFcEwks9SLdHu_hJ6eIw2b0io1N5tRyTeA"
+API_ID = "31024360"
+API_HASH = "8419dab9aac814d0dd1f0a9ed3e63a3e"
 WORKERS = 5
 
-DB_URI = "mongodb"
+DB_URI = "mongodb+srv://sihagankit630:585xpplus@cluster0.hlgcidc.mongodb.net/?appName=Cluster0"
 DB_NAME = "yato"
 
-FSUBS = [[-1003016571084, True, 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
+FSUBS = [[-1003542287615 , True , 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
 # Database Channel (Primary)
-DB_CHANNEL =    # just put channel id dont add ""
+DB_CHANNEL = "-1003542287615"    # just put channel id dont add ""
 # Multiple Database Channels (can be set via bot settings)
 # DB_CHANNELS = {
 #     "-1002595092736": {"name": "Primary DB", "is_primary": True, "is_active": True},
@@ -33,7 +33,7 @@ DB_CHANNEL =    # just put channel id dont add ""
 # Auto Delete Timer (seconds)
 AUTO_DEL = 300
 # Admin IDs
-ADMINS = [6497757690, 6103092779]
+ADMINS = [6891095964]
 # Bot Settings
 DISABLE_BTN = True
 PROTECT = True
