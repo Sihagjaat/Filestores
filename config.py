@@ -13,7 +13,7 @@ SHORT_API = ""
 SHORT_TUT = "https://t.me/How_to_Download_7x/26"
 
 # Bot Configuration
-SESSION = "yato"
+SESSION = "VideoEncodesBot"
 TOKEN = "8280972866:AAFcEwks9SLdHu_hJ6eIw2b0io1N5tRyTeA"
 API_ID = "31024360"
 API_HASH = "8419dab9aac814d0dd1f0a9ed3e63a3e"
