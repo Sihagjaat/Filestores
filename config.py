@@ -14,9 +14,9 @@ SHORT_TUT = "https://t.me/How_to_Download_7x/26"
 
 # Bot Configuration
 SESSION = "VideoEncodesBot"
-TOKEN = 
-API_ID = 
-API_HASH = 
+TOKEN = ""
+API_ID = "31024360"
+API_HASH = "8419dab9aac814d0dd1f0a9ed3e63a3e"
 WORKERS = 5
 
 DB_URI = "mongodb+srv://Snaplover:585xpplus@cluster0.9dhrqwk.mongodb.net/?appName=Cluster0"
