@@ -22,7 +22,7 @@ WORKERS = 5
 DB_URI = ""
 DB_NAME = "yato"
 
-FSUBS = [[ , True , 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
+FSUBS = [[-1003820297094 , True , 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
 # Database Channel (Primary)
 DB_CHANNEL = "-1003542287615"    # just put channel id dont add ""
 # Multiple Database Channels (can be set via bot settings)
