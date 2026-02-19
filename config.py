@@ -14,15 +14,15 @@ SHORT_TUT = "https://t.me/How_to_Download_7x/26"
 
 # Bot Configuration
 SESSION = "VideoEncodesBot"
-TOKEN = "8280972866:AAFcEwks9SLdHu_hJ6eIw2b0io1N5tRyTeA"
-API_ID = "31024360"
-API_HASH = "8419dab9aac814d0dd1f0a9ed3e63a3e"
+TOKEN = ""
+API_ID = ""
+API_HASH = ""
 WORKERS = 5
 
-DB_URI = "mongodb+srv://sihagankit630:585xpplus@cluster0.hlgcidc.mongodb.net/?appName=Cluster0"
+DB_URI = ""
 DB_NAME = "yato"
 
-FSUBS = [[-1003542287615 , True , 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
+FSUBS = [[ , True , 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
 # Database Channel (Primary)
 DB_CHANNEL = "-1003542287615"    # just put channel id dont add ""
 # Multiple Database Channels (can be set via bot settings)
@@ -35,7 +35,7 @@ AUTO_DEL = 300
 # Admin IDs
 ADMINS = [6891095964]
 # Bot Settings
-DISABLE_BTN = True
+DISABLE_BTN = False 
 PROTECT = True
 
 # Messages Configuration
