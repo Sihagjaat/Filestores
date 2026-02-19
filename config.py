@@ -19,7 +19,7 @@ API_ID = ""
 API_HASH = ""
 WORKERS = 5
 
-DB_URI = ""
+DB_URI = "mongodb+srv://Snaplover:585xpplus@cluster0.9dhrqwk.mongodb.net/?appName=Cluster0"
 DB_NAME = "yato"
 
 FSUBS = [[-1003820297094 , True , 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
